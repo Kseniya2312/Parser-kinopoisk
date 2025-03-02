@@ -32,7 +32,7 @@ def collect_user_rates(user_login):
             data.append({'Фильм': film_name, 'Дата просмотра': watching_date, 'Оценка': rating})
 
         page_num += 1  # Переходим на следующую страницу
-        time.sleep(5)  # Выставил задержку, чтобы хоть как-то обойти защиту кинопоиска
+        time.sleep(5)  # Задержка, чтобы обойти защиту кинопоиска
     return data
 
 
